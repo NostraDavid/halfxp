@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, initial-scale=1.0" />
     <title>HalfXP | Icecrown | Warmane</title>
-</head>
-<body>
-    <h1>Welcome to HalfXP</h1>
-    <h2>The newbie-friendly guild</h2>
-    <p>We're focussed on levelling, questing, addons, lore.</p>
-    <p>No end-game stuff (though we're not against it); Dungeons is fine :)</p>
-</body>
+  </head>
+  <body>
+    <h1>🛡Welcome to HalfXP!🛡</h1>
+    <h2>The newbie-friendly Alliance guild on Icecrown!</h2>
+    <p>
+      We're focussed on levelling, questing, addons, lore, questions you have.
+      In other words: PvE and Social stuff.
+    </p>
+    <p>No end-game stuff (though we're not against it); Dungeons are fine :)</p>
+
+    <h2>❓How to invite people</h2>
+    <p>We don't do that by hand; here's a macro:</p>
+    <pre>
+        /script n=GetNumWhoResults(); i=1; while(i&lt;n+1) do c, g=GetWhoInfo(i); if(g=="") then SendChatMessage("Hi, "..c.."! HalfXP is a newbie-friendly guild for people who play with 0.5x XP, or just play casually; Care to join?", "WHISPER", "COMMON", c); GuildInvite(c); end; i=i+1; end;
+    </pre>
+    <p>
+      Source:
+      <a class="data-source">
+        https://us.forums.blizzard.com/en/wow/t/is-there-a-way-to-shoot-a-mass-invite-out-for-guild-recruitment/544867/2
+      </a>
+    </p>
+
+    <h2>👶I'm new, how do I guild?</h2>
+    <p>
+      Press the <kbd>o</kbd> key to open the <em>social</em> window, and find
+      the <em>guild tab</em> and the bottom.
+    </p>
+
+    <h2>🤔Why join?</h2>
+    <p>
+      So you have a place to interact with a bunch of nerds if you want to know
+      more about the game, be it addons, lore, question, gear, etc.
+    </p>
+    <footer>(c) Nostradavid - 2023</footer>
+  </body>
 </html>
